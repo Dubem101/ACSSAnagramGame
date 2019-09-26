@@ -35,7 +35,6 @@ public class AnagramDictionary {
     public AnagramDictionary(Reader reader) throws IOException {
         BufferedReader in = new BufferedReader(reader);
         String line;
-        int position = 0;
         while((line = in.readLine()) != null) {
             String word = line.trim();
             wordList.add(word);
