@@ -81,7 +81,7 @@ public class AnagramDictionary {
             count[i] += count[i-1];
         }
 
-        for (int i = unsortedChars.length-1; i>=0; i--)//count[something] is 2, so output[2] = something, then count[something]
+        for (int i = unsortedChars.length-1; i>=0; i--)//count[something] is 2, so output[2] = something, then count[something]--
         {
             sortedChars[count[unsortedChars[i]]-1] = unsortedChars[i];
             count[unsortedChars[i]]--;
